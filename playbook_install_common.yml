@@ -18,7 +18,6 @@
         - build-essential
         - python-dev
         - python-pip
-        - ansible
    become: yes   # as "sudo"
 
  - name: Install a bunch of packages via python
