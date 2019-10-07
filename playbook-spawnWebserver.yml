@@ -1,6 +1,6 @@
 ---
 - name: launch a compute instance
-  hosts: MyHorizonVMs
+  hosts: MyChameleonVMs
   tasks:
     #task1
     - name: launch an instance
