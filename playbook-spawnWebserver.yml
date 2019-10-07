@@ -1,6 +1,6 @@
 ---
 - name: launch a compute instance
-  hosts: 129.114.33.89
+  hosts: MyChameleonVMs
   tasks:
     #task1
     - name: launch an instance
