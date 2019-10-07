@@ -1,6 +1,6 @@
 ---
 - name: launch a compute instance
-  hosts: MyChameleonVMs
+  hosts: 129.114.33.89
   tasks:
     #task2    
     - name: launch an instance-DB Server
