@@ -1,6 +1,6 @@
 ---
-- name: launch a compute instance
-  hosts: MyChameleonVMs
+- name: launch a db instance on Chameleon
+  hosts: MyLocalVms
   tasks:
     #task2    
     - name: launch an instance-DB Server
@@ -14,8 +14,9 @@
 
         name: team3_dbserver_assign2
         image: CC-Ubuntu18.04-20190822 
-        image_exclude: deprecated
         key_name: team3_key2
+        flavor: 2
         security_groups: team3_securityGroup
         flavor_ram: 2048
+        auto_ip: no
 ...
