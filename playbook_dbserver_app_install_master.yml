@@ -3,7 +3,7 @@
   # Play : Now install packages on DB server on Chameleon
   ###########################################
   - name: "Master File installing basic packages on Chameleon VM"
-    hosts: MyChameleonDB       # specified in the MyInventory file
+    hosts: MyChameleonVMs       # specified in the MyInventory file
     remote_user:  cc          # note that the user is cc for the
                               # chameleon vm
     strategy: debug
