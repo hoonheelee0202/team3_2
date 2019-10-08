@@ -10,19 +10,19 @@
   #####################################################
   ### Play 1: first do all the things for the local VM
   #####################################################
-  - name: "Master File acting on Local VM"
-    hosts: MyLocalVMs         # specified in the MyInventory file
-    remote_user:  vagrant     # note that the user is vagrant for the
+  #- name: "Master File acting on Local VM"
+  #  hosts: MyLocalVMs         # specified in the MyInventory file
+  #  remote_user:  vagrant     # note that the user is vagrant for the
                               # vagrant-created VM
 
-    strategy: debug
+  #  strategy: debug
 
     ### All the tasks related to the local VM ###
-    tasks:  
+  #  tasks:  
 
     # first install a bunch of packages on the local
     # vagrant created VM
-    - include: playbook_install_common.yml
+  #  - include: playbook_install_common.yml
 
   ###########################################
   # Play 2: Now install packages on chameleon vm
