@@ -19,7 +19,7 @@
         flavor_ram: 2048
         security_groups: team3_securityGroup
         floating_ips: 129.114.32.250
-        register: output
+      register: output
     - debug: var=output
     - local_action: copy content={{output.openstack.addresses}} dest=/vagrant/resultWebServerIP
 ...
