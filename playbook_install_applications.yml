@@ -8,5 +8,7 @@
      sudo systemctl restart apache2
      cd /var/www/html/
      git clone https://github.com/doc-vu/phpMySQLapp
+     sudo sed -i -e 's/127.0.0.1/192.168.2.47/g' /var/www/html/phpMySQLapp/books/includes/bookDatabase.php
+     sudo sed -i -e 's/127.0.0.1/192.168.2.47/g' /var/www/html/phpMySQLapp/movies/includes/movieDatabase.php
 ...
 
