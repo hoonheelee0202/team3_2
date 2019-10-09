@@ -3,7 +3,7 @@
   # Play : Now install packages on DB server on Chameleon
   ###########################################
   - name: "Master File installing basic packages on Chameleon VM"
-    hosts: MyChameleonVMs       # specified in the MyInventory file
+    hosts: MyChameleonDB       # specified in the MyInventory file
     remote_user:  cc          # note that the user is cc for the
                               # chameleon vm
     strategy: debug
@@ -14,6 +14,6 @@
     tasks:  
 
     # first install a bunch of packages on the chameleon VM
-    - include: playbook_install_Applications.yml
+    - include: playbook_install_db_Applications.yml
 ...
 
