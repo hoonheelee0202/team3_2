@@ -1,5 +1,2 @@
-host team3_server2
-     hostname 129.114.32.250
+host *
      StrictHostKeyChecking no
-     user cc
-     identityfile ~/.ssh/team3_key2.pem
