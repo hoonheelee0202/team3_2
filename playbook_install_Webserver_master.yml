@@ -1,6 +1,6 @@
 ---
   ###########################################
-  # Play : Now install packages on DB server on Chameleon
+  # Play : Now install packages on WEB server on Chameleon
   ###########################################
   - name: "Master File installing basic packages on Chameleon VM"
     hosts: MyChameleonVMs       # specified in the MyInventory file
@@ -14,7 +14,7 @@
     tasks:  
 
     # first install a bunch of packages on the chameleon VM
-    - include: playbook_install_Webapplications1.yml
+    - include: playbook_install_Webserver_applications1.yml
     - include: playbook_upload_file_toWebserver.yml
-    - include: playbook_install_Webapplications2.yml
+    - include: playbook_install_Webserver_applications2.yml
 ...
