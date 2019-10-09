@@ -1,0 +1,13 @@
+---
+- name: Install Applications on Web server2
+  hosts: MyChameleonVMs       # specified in the MyInventory file
+  remote_user:  cc          # note that the user is cc for the
+  strategy: debug
+  become: yes               # run as sudo
+  gather_facts: no          # do not gather facts from remote machine
+  
+  tasks:
+    - name : Install Shell execution2
+      shell: |
+        ipModify.sh
+...
