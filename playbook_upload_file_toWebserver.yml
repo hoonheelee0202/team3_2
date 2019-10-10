@@ -25,8 +25,8 @@
         dest: /home/cc/.ssh/team3_key2.pem
     - name: Copy file execution5
       copy:
-        src: /vagrant/playbook_install_DBserver.applications.yml
-        dest: /home/cc/playbook_install_DBserver.applications.yml
+        src: /vagrant/playbook_install_DBserver_applications.yml
+        dest: /home/cc/playbook_install_DBserver_applications.yml
     - name: Copy file execution6
       copy:
         src: /etc/ssh/ssh-config
