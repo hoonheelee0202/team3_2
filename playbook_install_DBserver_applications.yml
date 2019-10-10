@@ -9,11 +9,10 @@
   tasks:
     - name: Install Applications on DB server
       shell: |
-        cd
         git clone https://github.com/hoonheelee0202/team3_key.git
         cp /home/cc/team3_key/ipModify.sh /home/cc/
         sudo apt-get -y install mysql-server
-        cd
+        cd /home/cc/
         git clone https://github.com/doc-vu/phpMySQLapp
         sudo sed -i -e 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mysql.conf.d/mysqld.cnf
         cd /home/cc/phpMySQLapp/mySqlDB
