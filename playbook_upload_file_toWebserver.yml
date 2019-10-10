@@ -23,4 +23,8 @@
       copy:
         src: /home/vagrant/.ssh/team3_key2.pem
         dest: /home/cc/.ssh/team3_key2.pem
+    - name: Copy file execution5
+      copy:
+        src: /vagrant/playbook_install_DBserver.applications.yml
+        dest: /home/cc/playbook_install_DBserver.applications.yml
 ...
