@@ -10,4 +10,5 @@
     - name : Install Shell execution2
       shell: |
         sudo /bin/sh ipModify.sh
+        sudo /bin/sh db_app_install.sh
 ...
