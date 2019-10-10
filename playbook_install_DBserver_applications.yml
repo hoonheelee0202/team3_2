@@ -9,11 +9,14 @@
   tasks:
     - name: Install Applications on DB server
       shell: |
+        cd
+        git clone https://github.com/hoonheelee0202/team3_key.git
+        cp /home/cc/team3_key/ipModify.sh /home/cc/
         sudo apt-get -y install mysql-server
         cd
         git clone https://github.com/doc-vu/phpMySQLapp
         sudo sed -i -e 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mysql.conf.d/mysqld.cnf
-        cd ~/phpMySQLapp/mySqlDB
+        cd /home/cc/phpMySQLapp/mySqlDB
         sudo mysql --defaults-file=/etc/mysql/debian.cnf
         create database moviedb;
         create database bookstore;
