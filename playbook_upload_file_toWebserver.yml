@@ -23,8 +23,4 @@
       copy:
         src: /vagrant/playbook_install_DBserver_applications.yml
         dest: /home/cc/playbook_install_DBserver_applications.yml
-    - name: Copy file execution5
-      copy:
-        src: /etc/ssh/ssh-config
-        dest: /etc/ssh/ssh-config
 ...
