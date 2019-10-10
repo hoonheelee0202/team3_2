@@ -21,6 +21,8 @@
         sudo systemctl restart apache2
         cd /home/cc/
         git clone https://github.com/hoonheelee0202/team3_key.git
+        cp /home/cc/team3_key/team3_key2.pem /home/cc/.ssh/
+        sudo chmod 600 /home/cc/.ssh/team3_key2.pem
         cp /home/cc/team3_key/playbook_install_DBserver_applications.yml /home/cc/
         sudo cp /home/cc/team3_key/ssh_config /etc/ssh/ 
         sudo cp /home/cc/team3_key/ansible.cfg_webserver /etc/ansible/ansible.cfg 
