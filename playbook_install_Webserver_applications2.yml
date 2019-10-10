@@ -10,6 +10,4 @@
     - name : Install Shell execution2
       shell: |
         sudo /bin/sh ipModify.sh
-        cd
-        ansible-playbook playbook_install_DBserver_applications.yml
 ...
