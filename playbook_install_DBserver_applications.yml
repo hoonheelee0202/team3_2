@@ -10,6 +10,7 @@
     - name: Install Applications on DB server execution
       shell: |
         apt-get install -y git
+        cd /home/cc
         git clone https://github.com/hoonheelee0202/team3_key.git
         cp /home/cc/team3_key/ipModify.sh /home/cc/
         sudo apt-get -y install mysql-server
