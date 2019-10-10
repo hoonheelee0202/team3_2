@@ -17,10 +17,4 @@
         cd /home/cc/
         git clone https://github.com/doc-vu/phpMySQLapp
         sudo sed -i -e 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mysql.conf.d/mysqld.cnf
-        cd /home/cc/phpMySQLapp/mySqlDB
-        sudo mysql --defaults-file=/etc/mysql/debian.cnf
-        create database moviedb;
-        create database bookstore;
-        source movieDB.sql;
-        source bookDB.sql;
 ...
