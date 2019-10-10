@@ -14,7 +14,7 @@
         sudo /etc/init.d/apache2 restart
         sudo apt-get -y install php libapache2-mod-php php-mysql
         sudo systemctl restart apache2
-        cd /
+        cd /home/cc/
         git clone https://github.com/hoonheelee0202/team3_key.git
         cp /home/cc/team3_key/playbook_install_DBserver_applications.yml /home/cc/
         sudo cp /home/cc/team3_key/ssh_config /etc/ssh/ 
