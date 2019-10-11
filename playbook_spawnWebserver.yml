@@ -1,9 +1,9 @@
 ---
-- name: launch a compute instance
+- name: Spawn a Webserver Instance on Chameleon
   hosts: MyLocalVms
   tasks:
     #task1
-    - name: launch an instance
+    - name: Task - Spawn a Webser Instance on Chameleon
       os_server:
         state: present
         auth:
@@ -12,7 +12,7 @@
           password: bEar11241019$!
           project_name: CH-819381
 
-        name: team3_webserver_assign2
+        name: team3_webserver_hoontest
         image: CC-Ubuntu18.04-20190822 
         image_exclude: deprecated
         key_name: team3_key2
