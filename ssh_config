@@ -1,6 +1,5 @@
 host *
      StrictHostKeyChecking no
-     UserKnownHostsFile=/dev/null
      SendEnv LANG LC_*
      HashKnownHosts yes
      GSSAPIAuthentication yes
