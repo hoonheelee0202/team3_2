@@ -1,9 +1,9 @@
 ---
-- name: launch a db instance on Chameleon
+- name: Spawn a DB Server on Chameleon
   hosts: MyLocalVms
   tasks:
     #task2    
-    - name: launch an instance-DB Server
+    - name: Task - Spawn a DB Server on Chameleon
       os_server:
         state: present
         auth:
@@ -12,7 +12,7 @@
           password: bEar11241019$!
           project_name: CH-819381
 
-        name: team3_dbserver_assign2
+        name: team3_dbserver_hoontest
         image: CC-Ubuntu18.04-20190822 
         key_name: team3_key2
         security_groups: team3_securityGroup
