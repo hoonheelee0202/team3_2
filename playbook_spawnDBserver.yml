@@ -13,7 +13,8 @@
           project_name: CH-819381
 
         name: team3_dbserver_assign2
-        image: CC-Ubuntu18.04-20190822 
+        #image: CC-Ubuntu18.04-20190822 
+        image: CC-Ubuntu18.04-20190903
         key_name: team3_key2
         security_groups: team3_securityGroup
         flavor_ram: 2048
