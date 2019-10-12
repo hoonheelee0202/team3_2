@@ -14,8 +14,8 @@
 
         name: team3_webserver_assign2
         #image: CC-Ubuntu18.04-20190822 
-        image: CC-Ubuntu18.04
-        image_exclude: deprecated
+        #image: CC-Ubuntu18.04
+        image: 16d83b21-7cde-47e0-9230-22994c6cdc64
         key_name: team3_key2
         flavor_ram: 2048
         #security_groups: team3_securityGroup
