@@ -14,13 +14,14 @@
 
         name: team3_webserver_assign3
         #image: CC-Ubuntu18.04-20190822 
-        image: CC-Ubuntu18.04
+        #image: CC-Ubuntu18.04
         #image: 16d83b21-7cde-47e0-9230-22994c6cdc64
+        image: CC-Ubuntu18.04-20190918 
         key_name: team3_key2
         flavor_ram: 2048
-        #security_groups: team3_securityGroup
+        security_groups: team3_securityGroup
         #security_groups: Team7_Security
-        security_groups: ENABLE_HTTP_HTTPS
+        #security_groups: ENABLE_HTTP_HTTPS
         #security_groups: default
         floating_ips: 129.114.32.250
       register: output
