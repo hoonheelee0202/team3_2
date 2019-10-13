@@ -22,7 +22,7 @@
         security_groups: team3_securityGroup
         #security_groups: Team7_Security
         #security_groups: ENABLE_HTTP_HTTPS
-        security_groups: default
+        #security_groups: default
         floating_ips: 129.114.32.250
       register: output
     - debug: var=output
