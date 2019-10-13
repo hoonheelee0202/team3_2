@@ -19,7 +19,7 @@
         image: CC-Ubuntu18.04-20190918 
         key_name: team3_key2
         flavor_ram: 2048
-        security_groups: team3_securityGroup, ENABLE_PORT_3306, ENABLE_HTTP_HTTPS
+        security_groups: team3_securityGroup
         #security_groups: Team7_Security
         #security_groups: ENABLE_HTTP_HTTPS
         #security_groups: default
