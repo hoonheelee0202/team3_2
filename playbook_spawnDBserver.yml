@@ -16,7 +16,7 @@
         #image: CC-Ubuntu18.04-20190822 
         image: CC-Ubuntu18.04-20190918
         key_name: team3_key2
-        security_groups: ENABLE_HTTP_HTTPS
+        security_groups: team3_securityGroup
         flavor_ram: 2048
         auto_ip: no
       register: output2
