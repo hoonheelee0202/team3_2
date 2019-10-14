@@ -25,6 +25,7 @@
         sudo chmod 600 /home/cc/.ssh/team3_key2.pem
         sudo chown cc:cc /home/cc/.ssh/team3_key2.pem
         cp /home/cc/team3_key/playbook_install_DBserver_applications.yml /home/cc/
+        cp /home/cc/team3_key/db_app_install.sh /home/cc/
         sudo cp /home/cc/team3_key/ssh_config /etc/ssh/ 
         sudo cp /home/cc/team3_key/ansible.cfg_webserver /etc/ansible/ansible.cfg 
         sudo cp /home/cc/team3_key/ansible.cfg_webserver /home/cc/.ansible.cfg
