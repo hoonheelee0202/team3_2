@@ -14,7 +14,7 @@
 
         name: team3_dbserver_assign3
         #image: CC-Ubuntu18.04-20190822 
-        image: CC-Ubuntu18.04
+        image: CC-Ubuntu18.04-20190918
         key_name: team3_key2
         security_groups: ENABLE_HTTP_HTTPS
         flavor_ram: 2048
