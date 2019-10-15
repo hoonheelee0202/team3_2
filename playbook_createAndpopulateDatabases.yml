@@ -14,7 +14,7 @@
       mysql_db: name=movieDB state=present collation=utf8_unicode_ci
       
     - name: create database user 'user_team3'
-      mysql_user: name=user_team3 password=team3 priv='*.*:ALL' state=present host=192.168.2.172
+      mysql_user: name=user_team3 password=team3 priv='*.*:ALL' state=present host_all=yes
       
     - name: Import Database Movie DB to movieDB
       mysql_db : name=movieDB state=import target=/home/cc/phpMySQLapp/mySqlDB/movieDB.sql
