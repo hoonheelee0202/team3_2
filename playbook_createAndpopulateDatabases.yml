@@ -17,8 +17,8 @@
       mysql_user: name=user_team3 password=team3 priv='*.*:ALL' state=present host=192.168.2.172
       
     - name: Import Database Movie DB to movieDB
-      mysql_db : movieDB state=import target=/home/cc/phpMySQLapp/mySqlDB/movieDB.sql
+      mysql_db : name=movieDB state=import target=/home/cc/phpMySQLapp/mySqlDB/movieDB.sql
       
     - name: Import Database Book DB to bookstoreDB
-      mysql_db : bookstore state=import target=/home/cc/phpMySQLapp/mySqlDB/bookDB.sql    
+      mysql_db : name=bookstore state=import target=/home/cc/phpMySQLapp/mySqlDB/bookDB.sql    
 ...
