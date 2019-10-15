@@ -14,10 +14,10 @@
       mysql_db: name=moviedb state=present collation=utf8_unicode_ci
       
     - name: create database user 'user_team3'
-      mysql_user: name=user_team3 password=team3 priv='*.*:ALL' state=present host_all=yes
+      mysql_user: name=user_team3 password=team3 priv='*.*:ALL' state=present host=192.168.%.%
       
     - name: Import Database Movie DB to movieDB
-      mysql_db : name=movieDB state=import target=/home/cc/phpMySQLapp/mySqlDB/movieDB.sql
+      mysql_db : name=moviedb state=import target=/home/cc/phpMySQLapp/mySqlDB/movieDB.sql
       
     - name: Import Database Book DB to bookstoreDB
       mysql_db : name=bookstore state=import target=/home/cc/phpMySQLapp/mySqlDB/bookDB.sql    
