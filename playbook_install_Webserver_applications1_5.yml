@@ -1,5 +1,5 @@
 ---
-- name: Install Applications on Web server2
+- name: Install Applications on Web server 1.5
   hosts: MyChameleonVMs       # specified in the MyInventory file
   remote_user:  cc          # note that the user is cc for the
   strategy: debug
