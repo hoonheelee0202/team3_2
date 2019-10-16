@@ -23,7 +23,8 @@
         #security_groups: Team7_Security
         #security_groups: ENABLE_HTTP_HTTPS
         #security_groups: default
-        floating_ips: 129.114.32.250
+        #floating_ips: 129.114.32.250
+        floating_ips: 129.114.32.84
       register: output
     - debug: var=output
     - local_action: copy content={{output.openstack.addresses}} dest=/vagrant/resultWebServerIP
