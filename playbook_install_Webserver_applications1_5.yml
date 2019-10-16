@@ -9,6 +9,7 @@
   tasks:
     - name : Install Shell execution 1.5 - ssh connect
       shell: |
+        cd /home/cc/
         sudo /bin/sh ssh_connect_dbserver_ipmodify.sh
         sudo /bin/sh ssh_connect_dbserver.sh
 ...
