@@ -1,6 +1,6 @@
 ---
-- name: Install Applications on Web server1
-  hosts: MyChameleonVMs       # specified in the MyInventory file
+- name: Install MySQL and PHP to DB Server
+  hosts: MyChameleonDB       # specified in the MyInventory file
   remote_user:  cc          # note that the user is cc for the
   strategy: debug
   become: yes               # run as sudo
@@ -8,10 +8,8 @@
   
   tasks:
     - hosts: apache
-      sudo: yes
-      tasks:
-        - name: install MySQL
-          action: $ansible_pkg_mgr pkg=mysql-server state=installed
-        - name: Add Python MySQL DB
-          action: $ansible_pkg_mgr pkg=python-mysqldb state=installed
+      - name: install MySQL
+        action: $ansible_pkg_mgr pkg=mysql-server state=installed
+      - name: Add Python MySQL DB
+        action: $ansible_pkg_mgr pkg=python-mysqldb state=installed
 ...
