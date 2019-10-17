@@ -1,6 +1,6 @@
 ---
 - name: Install Applications on Web server1
-  hosts: MyChameleonVMs       # specified in the MyInventory file
+  hosts: MyChameleonDB       # specified in the MyInventory file
   remote_user:  cc          # note that the user is cc for the
   strategy: debug
   become: yes               # run as sudo
