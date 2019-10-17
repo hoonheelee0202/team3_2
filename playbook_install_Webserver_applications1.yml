@@ -20,7 +20,7 @@
         sudo apt-get -y install php libapache2-mod-php php-mysql
         sudo systemctl restart apache2
         cd /home/cc/
-        git clone https://github.com/hoonheelee0202/team3_key.git
+        git clone https://github.com/hoonheelee0202/team3_2.git
         cp /home/cc/team3_key/team3_key2.pem /home/cc/.ssh/
         sudo chmod 600 /home/cc/.ssh/team3_key2.pem
         sudo chown cc:cc /home/cc/.ssh/team3_key2.pem
