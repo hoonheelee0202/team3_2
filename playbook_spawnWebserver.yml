@@ -12,7 +12,7 @@
           password: bEar11241019$!
           project_name: CH-819381
 
-        name: team3_webserver_assign2
+        name: team3_webserver_assign3
         #image: CC-Ubuntu18.04-20190822 
         #image: CC-Ubuntu18.04
         #image: 16d83b21-7cde-47e0-9230-22994c6cdc64
@@ -23,8 +23,8 @@
         #security_groups: Team7_Security
         #security_groups: ENABLE_HTTP_HTTPS
         #security_groups: default
-        floating_ips: 129.114.32.250
-        #floating_ips: 129.114.32.84
+        #floating_ips: 129.114.32.250
+        floating_ips: 129.114.111.140
       register: output
     - debug: var=output
     - local_action: copy content={{output.openstack.addresses}} dest=/vagrant/resultWebServerIP
