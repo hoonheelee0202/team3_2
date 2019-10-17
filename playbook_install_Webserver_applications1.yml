@@ -27,6 +27,7 @@
         cp /home/cc/team3_key/playbook_install_DBserver_applications.yml /home/cc/
         cp /home/cc/team3_key/db_app_install.sh /home/cc/
         cp /home/cc/team3_key/playbook_createAndpopulateDatabases.yml /home/cc/
+        cp /home/cc/team3_key/ipModify2.sh /home/cc/
         cp /home/cc/team3_key/ssh_connect_dbserver.sh /home/cc/
         cp /home/cc/team3_key/ssh_connect_dbserver_ipmodify.sh /home/cc/
         sudo cp /home/cc/team3_key/ssh_config /etc/ssh/ 
