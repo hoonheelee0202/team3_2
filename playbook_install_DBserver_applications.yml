@@ -11,7 +11,7 @@
       shell: |
         apt-get install -y git
         sudo apt-get -y install mysql-server
-        sudo apt-get install python-mysqldb
+        sudo apt-get install -y python-mysqldb
         cd /home/cc
         git clone https://github.com/hoonheelee0202/team3_key.git
         cd /home/cc/
